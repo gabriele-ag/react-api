@@ -27,6 +27,7 @@ body {
 
 /* Header */
 .titleheader {
+    font-size: 40px;
     padding: 15px 0;
     text-align: center;
 }
@@ -55,6 +56,14 @@ body {
     aspect-ratio: 1 / 1 ;
     object-fit: cover;
     object-position: top;
+}
+
+.sectionCelebrityTitle{
+    
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 /* Card-details */
