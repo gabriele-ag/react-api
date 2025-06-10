@@ -6,16 +6,26 @@ import axios from 'axios'
 
 function Main () {
     const [actress, setActress] = useState([])
+    const [actor, setActor] = useState([])
 
     const apiUrl = "https://lanciweb.github.io/demo/api/actresses/";
+    const apiUrl2 = "https://lanciweb.github.io/demo/api/actors/"
 
     useEffect(() => {
-            axios.get(apiUrl).then((resp) => {
+        axios.get(apiUrl).then((resp) => {
             const actressList = resp.data
             setActress(actressList)
             console.log(actressList)
         });
     },[])
+
+    useEffect(() => {
+        axios.get(apiUrl2).then((resp) => {
+            const actorList = resp.data
+            setActor(actorList)
+            console.log(actorList)
+        });
+    }, []);
 
 
     return (
